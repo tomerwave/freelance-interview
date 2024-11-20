@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.log.*
+npm-debug.log*
+
+# Dependency directories in workspaces
+apps/*/node_modules/
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Vite
+apps/client/.vite/
+apps/client/dist/
+
+# Environment files
+.env
+.env.*.local
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# Editor & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# Git files
+*.orig
