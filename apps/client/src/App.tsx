@@ -1,5 +1,16 @@
+import { useEffect } from "react";
+import Counter from "./components/Counter";
+import socket from "./socket";
+
 function App() {
-  return <>Tomer</>;
+  useEffect(() => {
+    socket.connect();
+
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+  return <Counter />;
 }
 
 export default App;
